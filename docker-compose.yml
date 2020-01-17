@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+
+  self-driving-car:
+
+    image: self-driving-car
+    build: .
+    command: python ./lanes.py
+    restart: always 
+    
+
